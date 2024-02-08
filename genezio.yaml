@@ -1,0 +1,8 @@
+name: (•◡•)project-name(•◡•)-backend
+region: (•◡•)region(•◡•)
+cloudProvider: genezio
+scripts:
+  preBackendDeploy: go mod download
+classes:
+  - path: ./backendService/backendService.go
+    type: jsonrpc
