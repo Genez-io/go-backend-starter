@@ -1,4 +1,4 @@
-package users
+package backend
 
 import (
 	"encoding/json"
