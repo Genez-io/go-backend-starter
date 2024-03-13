@@ -1,8 +1,24 @@
+# Learn more about Genezio YAML at https://genezio.com/docs/project-structure/genezio-configuration-file/
+# The name of the project.
 name: (•◡•)project-name(•◡•)
+# The region where the project is deployed.
 region: (•◡•)region(•◡•)
-cloudProvider: genezio
-scripts:
-  preBackendDeploy: go mod download
-classes:
-  - path: ./backendService/backendService.go
-    type: jsonrpc
+# The version of the Genezio YAML configuration to parse.
+yamlVersion: 2
+backend:
+    # The root directory of the backend.
+    path: .
+    # Information about the backend's programming language.
+    language:
+        # Information about the backend's programming language.
+        name: go
+    # Scripts are running in the specified `path` directory.
+    scripts:
+        # List of scripts to run before deploying the backend.
+        deploy: go mod download
+    # The cloud provider where the backend is deployed.
+    cloudProvider: genezio
+    # Information about where the deployable classes.
+    classes:
+        # The path to the file containing the deployable class.
+        - path: backendService/backendService.go
