@@ -18,7 +18,3 @@ backend:
         deploy: go mod download
     # The cloud provider where the backend is deployed.
     cloudProvider: genezio
-    # Information about where the deployable classes.
-    classes:
-        # The path to the file containing the deployable class.
-        - path: backendService/backendService.go

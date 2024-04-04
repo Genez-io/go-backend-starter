@@ -14,6 +14,7 @@ type Response struct {
 	City    string  `json:"city"`
 }
 
+// genezio: deploy
 type BackendService struct{}
 
 func New() BackendService {
