@@ -16,5 +16,3 @@ backend:
     scripts:
         # List of scripts to run before deploying the backend.
         deploy: go mod download
-    # The cloud provider where the backend is deployed.
-    cloudProvider: genezio
